@@ -44,10 +44,13 @@ li,
 article{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .article-img{
     max-width: 350px;
     width: 100%;
+    max-height: 350px;
+    height: 100%;
 }
 article h3{
     font-weight: bold;
@@ -74,4 +77,15 @@ span{
     line-height: 1.4em;
     text-align: justify;
     text-justify: inter-word;
+}
+
+@media (max-width: 1024px){
+    .header,
+    article{
+        justify-content: center;
+    }
+    .text{
+        display: none;
+    }
+    
 }
